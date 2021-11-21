@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html,*{
+	font-family: Nunito;
+	animation-name: bgcolor;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes bgcolor{
+	from {background-color: #A8A8A6;}
+	to {background-color: #646464;}
+}
+
+/* big header and animations */
+h1{
+	display: inline-block;
+	margin-top: 20vh;
+  	text-align: center;
+	background: none;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	text-transform: uppercase;
+	transition-duration: 0.2s;
+	text-shadow: black 1px 2px 1px;
+	cursor: none;
+}
+.h-ndkcuber{
+	animation-name: h-ndkcuber;
+	animation-duration: 2s;
+}
+.h-ndkcuber:hover{
+	color: black;
+	text-shadow: white 1px 2px 1px;
+	text-decoration: underline;
+	cursor: none;
+}
+@keyframes h-ndkcuber{
+	from { margin-top: 0vh; }
+	to { margin-top: 20vh; }
+}
+.h1-ndkcuber-container{
+	text-align: center;
+}
+
+/* About me buttons */
+.me-container{
+	background: none;
+	text-align: center;
+	opacity: 0;
+	animation-name: me-container;
+	animation-duration: 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	align-items: center;
+}
+@keyframes me-container{
+	from {opacity: 0; cursor: none;}
+	to {opacity: 1; cursor: pointer;}
+}
+.me-container .aa{
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 30px;
+	border: 1px black solid;
+	color: black;
+	background: white;
+	animation: buttons 2s;
+	transition-duration: 0.3s;
+	display: inline-block;
+	width: 250px;
+	border-radius: 10px;
+	margin-top: 10px;
+	cursor: none;
+}
+.me-container .aa:hover{
+	background: black;
+	color: white;
+}
+@keyframes buttons{
+	from { background:none;cursor: none; }
+	to { background:white; cursor: pointer; }
+}
+.aboutme{
+	color: black;
+	font-size: 20px;
+	margin: 30px;
+	padding: 10px 20px;
+	border: 1px grey solid;
+	display: inline-block;
+	text-align: left;
+}
+a{
+	color: lightblue;
+}
+.content, .container{
+	background: none;
+	background-color: #ddd;
+}
+p{
+	color:white;
+}
